@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(177,203,187);
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkcyan;
+    padding: 20px;
+}
+#navbar>h2{
+    color: white;
+    text-shadow: 1px 1.5px 2px;
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+body{
+    background-color: #d5e1df;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    body{
+        background-color: #b5e7a0;
+    }
+
+}
