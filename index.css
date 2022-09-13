@@ -3,8 +3,14 @@
     padding: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+    
+
+}
 body{
-    background-color: rgb(177,203,187);
+    background-color: rgb(222,222,205);
+    
 }
 #navbar{
     display: flex;
@@ -12,11 +18,89 @@ body{
     background-color: darkcyan;
     padding: 20px;
 }
-#navbar>h2{
+#navbar>a{
     color: white;
     text-shadow: 1px 1.5px 2px;
+    text-decoration: none;
     
 }
+#project{
+    height: 1500px;
+    background-color: blue;
+}
+#about{
+    height: 2000px;
+    background-color: #b5e7a0;
+}
+#resume{
+    height: 1000px;
+}
+.home-section{
+    
+    
+    padding: 50px 0px 0 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    opacity: 0;
+    transition:2s ease;
+    
+}
+
+.hero-heading{
+    color:#ffffff;
+    font-size: 120px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.hero-role{
+   position: relative;
+   right: 150px;
+   top: 197px; 
+}
+.hero-btn{
+    position: relative;
+   right: 135px;
+   top: 196px; 
+   padding: 5px 10px;
+   border: 2px solid white;
+   background-color: black;
+   color: white;
+   cursor: pointer;
+}
+.hero-btn:hover{
+    
+    
+}
+
+.home-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    
+}
+.home-section{
+   
+    position: fixed;
+}
+
+.home-section.active,
+.project-section.active,
+.about-section.active,
+.contact-section.active{
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
+
+
+
+
 @media only screen and (min-width: 481px) and (max-width: 768px){
 body{
     background-color: #d5e1df;
