@@ -106,7 +106,7 @@ color: black;
 .timeline{
     display: block;
     width: 80%;
-    margin: 150px auto;
+    margin: 100px auto;
 }
 
 .timeline .heading{
@@ -221,9 +221,29 @@ p{
 .uni{
     font-size: 16px; 
 }
+.heading{
+    background-image: linear-gradient(to left,#b5e7a0,white);  
+    padding:5px 5px ;
+}
+.star{
+    color:blue ;
+}
 
 
-
+#about>img{
+    width: 50%;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+.bio>h1{
+    text-align: center;
+    
+    margin-top: 20px;
+}
+.bio>h2{
+    text-align: center;
+}
 
 
 
@@ -232,7 +252,7 @@ p{
 
 
 #project{
-    height: 1000px;
+    height: 800px;
     width: 80%;
     margin: auto;
     background-image: linear-gradient(rgb(43,49,61),#b5e7a0);
@@ -282,9 +302,35 @@ p{
     }
 }
 
-
-
-
+.project1{
+    
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid yellow;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    transition: all 2s ease;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+}
+@keyframes example {
+    from {transform: translate(0px, -30px);}
+    to {transform: translate(0px, 0px);}
+  }
+  
+.project1>img{
+    width: 100%;
+    margin: auto;
+}
+.project1>div{
+    color: #ffffff;
+    padding: 20px 0px 0px 40px;
+}
 
 
 
