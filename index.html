@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="span.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -15,6 +16,7 @@
         <a href="#project">Project</a>
         <a href="#about">About</a>
         <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
         
     </div>
     <div id="home">
@@ -25,10 +27,148 @@
             <img src="https://wallpaperaccess.com/full/1853427.jpg" class="home-img" alt="">
         </div>
     </div>
-    <div id="about"></div>
-    <div id="project"></div>
+
+
+    <div id="about">
+        <!-- <div id="span1">
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div> -->
+        
+        <h1>My name is Subham Ranjan</h1>
+        <h2>I'm a full stack developer based in Delhi, India. I have developed many types of front-ends from basic to Ecommerce platforms.
+            I'm passionate about 
+            </h2>
+        
+            <div class="timeline">
+                <h1 class="heading">education and experience</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">04/2022-11/2022</h1>
+                        <h3>Masai School, Bangalore</h3>
+                        <p class="card-detail">Joined a 30 week, Full Time, Full Stack Web Development bootcamp, <br>Worked extensively on,
+                            <br>- SpringBoot, Hibernate
+                            <br>- Data Structure and Algorithms
+                            <br>- Soft skills
+                            <br>- 2000+ hours coding</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">2016-2020</h1>
+                        <h3 class="edu">Bachelor of Technology - Mechatronics Engineering <span class="uni">Guru Gobind Singh Indraprastha University, New Delhi</span>
+                            </h3>
+                        <p class="card-detail"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">2013-2015</h1>
+                        <h3>Higher Secondary School
+                            <span class="uni">Kendriya Vidyalaya, Andrews Ganj, New Delhi</span>
+                        </h3>
+                        
+                        <p class="card-detail">Completed HSC - Science
+                            & Secured 75.8%</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">2011-2013</h1>
+                        <h3>Senior Secondary School
+                            <span class="uni">Kendriya Vidyalaya, Katihar, Bihar</span>
+                        </h3>
+                        
+                        <p class="card-detail">Completed SSC - Science
+                            & Secured 76.0%</p>
+                    </div>
+                </div>
+            
+              
+            </div>
+        
+    </div>
+    <div id="project">
+        <div><h2 data-text="Projects..." >Projects...</h2></div>
+        
+    </div>
     
     <div id="resume"></div>
+    <div id="contact">
+        <div class="myDetails">
+            <h1>Have an idea??</h1>
+            <div>Let's Connect!</div>
+            <div class="myMail">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="mail-logo">
+                <p>subhamranjanhalo@gmail.com</p>
+            </div>
+            <div class="myNumber">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Mno-logo">
+                <p>+91-7982365842</p>
+            </div>
+            <div class="contact-link">
+                <a href="https://github.com/Ranjanji"><img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" alt="logo-github"></a>
+                <a href="https://linkedin.com/in/Subham-Ranjan"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="logo-linkdin"></a>
+            </div>
+        </div>
+        <div class="email-form">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <textarea name="" id="msg" rows="4" placeholder="Write Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+           
+        </div>
+    </div>
 </body>
 </html>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            SecureToken:"90d6047f-f2a3-4231-b26b-317fecba5299",
+    To : 'subhamranjanhalo@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script>
 <script src="index.js"></script>
