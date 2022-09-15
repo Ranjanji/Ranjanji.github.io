@@ -22,65 +22,31 @@
     <div id="home">
         <div class="home-section active">
             <h1 class="hero-heading">hello, i am <br> Subham <br>Ranjan</h1>
-            <h3 class="hero-role">And I'm a Full Stack Developer</h3>
-            <button class="hero-btn">Hire Me</button>
-            <img src="https://wallpaperaccess.com/full/1853427.jpg" class="home-img" alt="">
+            <h3 class="hero-role">And I'm a Full Stack Web Developer</h3>
+            <a class="hero-resume active" href="#">Hire Me</a>
+            <img src="https://wallpaperaccess.com/full/1853427.jpg" class="home-img" alt="ant-image">
         </div>
     </div>
 
 
     <div id="about">
-        <!-- <div id="span1">
-            <div class="loader">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="loader">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div> -->
-        
+        <h1 class="about-me">About Me</h1>
         
         <img src="subham.jpg" alt="MyProfile">
         <div class="bio">
-            <h1>My name <br> <span class="star">**</span>is<span class="star">**</span> <br>Subham Ranjan</h1>
+           
+            <h1>My name is<br>  <span class="star">**</span>Subham Ranjan<span class="star">**</span></h1>
+
         <h2>I'm a full stack developer based in Delhi, India. I have developed many types of front-ends from basic to Ecommerce platforms. 
-            <br> I'm passionate about is healthy living and healthy eating. 
-            <br>It allows me to blend my personal interests and passions with my career.
-            <br> Also I love to watch movies and tv-series
+             I'm passionate about is healthy living and healthy eating. 
+            It allows me to blend my personal interests and passions with my career.
+             Also I love to watch movies and tv-series
             </h2>
         </div>
         
         
             <div class="timeline">
-                <h1 class="heading">education and experience</h1>
+                <h1 class="heading">Education and Experience</h1>
                 <div class="card">
                     <div class="card-body">
                         <h1 class="card-title">04/2022-11/2022</h1>
@@ -167,6 +133,18 @@
         <h1>Skills</h1>
         <div id="tech-skills">
             <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="java-logo">
+                <p>Java</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="mysql-logo">
+                <p>MySQL</p>
+            </div>
+            <div>
+                <img src="https://www.tc-web.it/wp-content/uploads/2019/12/spring-logo.jpg" alt="spring-boot-logo">
+                <p>Spring Boot</p>
+            </div>
+            <div>
                 <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="html-logo">
                 <p>HTML 5</p>
             </div>
@@ -178,22 +156,12 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="js-logo">
                 <p>JavaScript</p>
             </div>
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="java-logo">
-                <p>Java</p>
-            </div>
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="mysql-logo">
-                <p>MySQL</p>
-            </div>
+            
             <div>
                 <img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" alt="github-logo">
                 <p>GitHub</p>
             </div>
-            <div>
-                <img src="https://www.tc-web.it/wp-content/uploads/2019/12/spring-logo.jpg" alt="spring-boot-logo">
-                <p>Spring Boot</p>
-            </div>
+            
             <div>
                 <img src="https://www.drupal.org/files/project-images/aws-logo.jpg" alt="aws-logo">
                 <p>AWS</p>
@@ -226,31 +194,22 @@
             </div>
         </div>
         <div class="email-form">
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form action="https://formsubmit.co/subhamranjanhalo@gmail.com" method="POST">
                 <h3>GET IN TOUCH</h3>
                 <input type="text" id="name" placeholder="Your Name" required>
                 <input type="email" id="email" placeholder="Email" required>
                 <input type="text" id="phone" placeholder="Phone no." required>
-                <textarea name="" id="msg" rows="4" placeholder="Write Your Message"></textarea>
+                <textarea name="textarea" id="msg" rows="4" placeholder="Write Your Message"></textarea>
                 <button type="submit"><a href="#" class="btn1">Send</a></button>
             </form>
            
         </div>
     </div>
+    
 </body>
 </html>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 <script>
-    function sendEmail(){
-        Email.send({
-            SecureToken:"90d6047f-f2a3-4231-b26b-317fecba5299",
-    To : 'subhamranjanhalo@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact Form Enquiry",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-    }
+   
 </script>
 <script src="index.js"></script>
