@@ -576,7 +576,7 @@ border-radius: 10px;
 
 .btn1 {
     /* background: orangered; */
-   width: 100%;
+    width: 100%;
     border: 1px solid orangered;
     color: orangered;
     text-decoration: none;
@@ -610,7 +610,9 @@ border-radius: 10px;
     width: 100%;
     
 }
-
+#btn2{
+    border: 1px solid orangered; 
+}
 
 
 
