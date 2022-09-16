@@ -71,7 +71,7 @@ body{
     
 }
 .hero-resume.active{
-    animation: hire-me 6s;
+    animation: hire-me 4s;
 }
 @keyframes hire-me {
 
@@ -405,7 +405,7 @@ p{
 
 
 #skills{
-    height: 900px;
+    
     width: 80%;
     margin: auto;
     background-color: rgb(86,82,82);
