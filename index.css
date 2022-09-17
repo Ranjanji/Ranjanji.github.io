@@ -380,6 +380,7 @@ p{
     width: 80%;
     margin: auto;
     margin-top: 60px;
+    
     border-radius: 20px;
     transition: all 2s ease;
     position: relative;
@@ -398,7 +399,8 @@ p{
 }
 .project1>div{
     color: #ffffff;
-    padding: 20px 0px 0px 40px;
+    padding: 20px 0px 20px 50px;
+   
 }
 .projectLink{
     display: flex;
@@ -618,7 +620,7 @@ border-radius: 10px;
     width: 100%;   
 }
 #btn2{
-    border: 1px solid orangered; 
+    border: 1px solid lightgreen; 
 }
 
 
@@ -711,7 +713,7 @@ border-radius: 10px;
 #skills{
     
     width: 100%;
-    margin-top: 400px;
+    margin-top: 500px;
     padding: 70px 0px;
     
     border: 2px solid red;
@@ -847,10 +849,10 @@ border-radius: 10px;
 #skills{
     
     width: 100%;
-    margin-top: 400px;
+    margin-top: 600px;
     padding: 70px 0px;
     
-    border: 2px solid red;
+    
 
 }
 #tech-skills>div{
