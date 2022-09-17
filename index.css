@@ -27,10 +27,7 @@ body{
     text-decoration: none;
     
 }
-#home{
-  
-    
-}
+
 .home-section{
     display: flex;
     align-items: center;
@@ -129,7 +126,7 @@ body{
     z-index: 1;
 }
 
-
+/* About Section */
 #about{
   
     /* background-color: #b5e7a0; */
@@ -139,8 +136,71 @@ body{
     margin-top: 75px;
     padding: 70px 0 30px 20px;
 }
-/* timeline */
+.about-me{
+    text-align: center;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+}
 
+
+
+.box{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    justify-content: center;
+    
+
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+.box1>img+div{
+   
+    display: flex;
+    justify-content: center;
+
+}
+.box1>img{
+    width: 50%;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    /* border: 5px solid rgb(222,222,205); */
+   
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.box-sub{
+border: 1px solid ;
+border-radius: 3px;
+padding: 5px 10px;
+}
+
+
+.bio>h2{
+    text-align:justify;
+    width: 100%;
+    
+}
+
+.edu{
+    font-size: 20px;
+}
+.uni{
+    font-size: 16px; 
+}
+.heading{
+    background-image: linear-gradient(to right,white,rgb(222,222,205));  
+    padding:5px 5px ;
+}
+
+/* timeline */
 .timeline{
     display: block;
     width: 80%;
@@ -253,71 +313,6 @@ body{
 p{
     line-height: 23px;
 }
-.edu{
-    font-size: 20px;
-}
-.uni{
-    font-size: 16px; 
-}
-.heading{
-    background-image: linear-gradient(to right,white,rgb(222,222,205));  
-    padding:5px 5px ;
-}
-.star{
-    color:blue ;
-}
-
-.box{
-    display: grid;
-    grid-template-columns: 35% 60%;
-    justify-content: center;
-    
-
-}
-.box1{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-   
-}
-.box1>img+div{
-   
-    display: flex;
-    justify-content: center;
-
-}
-.box1>img{
-    width: 50%;
-    margin: auto;
-    display: block;
-    border-radius: 50%;
-    /* border: 5px solid rgb(222,222,205); */
-   
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-.box-sub{
-border: 1px solid ;
-border-radius: 3px;
-padding: 5px 10px;
-}
-
-
-.bio>h2{
-    text-align:justify;
-    width: 100%;
-    
-}
-.about-me{
-    text-align: center;
-    margin-bottom: 20px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 4rem;
-}
-
-
 
 
 
@@ -379,7 +374,7 @@ padding: 5px 10px;
     grid-template-columns: repeat(2,45%);
     justify-content: center;
     gap: 10px;
-    border: 1px solid yellow;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     
     background-color: rgb(86,82,82);
     width: 80%;
@@ -389,10 +384,10 @@ padding: 5px 10px;
     transition: all 2s ease;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 @keyframes example {
-    from {transform: translate(0px, -30px);}
+    from {transform: translate(0px, -40px);}
     to {transform: translate(0px, 0px);}
   }
   
@@ -455,7 +450,8 @@ padding: 5px 10px;
     width: 80%;
     margin: auto;
     background-color:#555;
-    padding-top: 70px;
+    padding: 70px 0px;
+
 }
 #skills>h1{
     color: white;
@@ -472,6 +468,7 @@ padding: 5px 10px;
    grid-template-rows: repeat(3,1fr);
    gap: 50px;
    justify-content: center;
+   margin-bottom: 40px;
    
     
 }
@@ -492,46 +489,12 @@ padding: 5px 10px;
     margin: 5px;
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.calendar{
+    margin-top: 30px;
+    width: 95%;
+    background-color: #565252;
+    
+}
 
 
 
@@ -543,8 +506,6 @@ padding: 5px 10px;
     grid-template-columns: repeat(2,50%);
     
     justify-content: center;
-
-    
 
 }
 .myDetails{
@@ -592,10 +553,6 @@ padding: 5px 10px;
 .contact-link>a>img{
     width: 30px;
 }
-
-
-
-
 
 .email-form>form{
 background: #fff;
@@ -658,8 +615,7 @@ border-radius: 10px;
 }
 
 .btn1:hover:after {
-    width: 100%;
-    
+    width: 100%;   
 }
 #btn2{
     border: 1px solid orangered; 
@@ -669,15 +625,260 @@ border-radius: 10px;
 
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
-body{
-    background-color: #d5e1df;
-}
-}
-@media only screen and (min-width: 320px) and (max-width: 480px){
-    body{
-        background-color: #b5e7a0;
+    .home-section:before{
+      width: 100%; 
+    } 
+    .hero-heading{
+        
+        font-size: 40px;
+        margin-left: 25%;
+        margin-top: 25%;
     }
+    .hero-role{
+        right: 150px;
+        top: 197px; 
+        margin-top: 40px;
+     
+     }
+     #about{
+  
+        width: 100%;
+       background-color: rgb(220,226,248);
+        margin: auto;
+        margin-top: 200px;
+        padding: 30px 0px 20px 20px;
+    }
+    .about-me{
+        
+        font-size: 2rem;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        
+    
+    }
+    .box1{
+        
+        gap: 30px;
+       
+    }
+    .bio>h2{
+        text-align:justify;
+        width: 90%;
+        margin: auto;
+        font-size: 20px;
+        
+    }
+    .heading{
+        background-image: linear-gradient(to right,white,rgb(220,226,248));  
+        font-size: 20px;
+        margin: 0 0 0px 30px;
+        
+       
+    }
+    .timeline{
+        display: block;
+        width: 90%;
+        margin: 100px 0 0 0;
+    }
+    
+    .card{
+        width: 90%;
+        margin: 30px 0;
+    }
+   #card1{
+    margin-top: -100px;
+   }
 
+   /* project */
+   #project>div:first-child>h2 {
+    font-size: 50px; 
+}
+.project1{
+    
+    display: grid;
+    grid-template-columns: 100%;
+    padding-bottom: 30px;
+    
+    
+}
+.project1>img{
+    border-radius: 20px 20px 0 0;
+}
+/* Skills */
+#skills{
+    
+    width: 100%;
+    margin-top: 400px;
+    padding: 70px 0px;
+    
+    border: 2px solid red;
+
+}
+#tech-skills>div{
+    
+    padding: 10px 0px 0 0;
+    background-color: white;
+    
+}
+#tech-skills>div>p{
+    
+    font-size: 16px;
+}
+#contact{
+    width: 100%;
+    
+    background-color: rgb(245,245,245);
+    display: grid;
+    grid-template-columns: 100%;
+}
+.email-form>form{
+   
+    max-width: 100%;
+    
+    }
+    .email-form>form button{
+        border: none;
+        width: 30%;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+   body{
+    background: content-box;
+   }
+   #home{
+    height: 350px;
+    }
+    .home-section:before{
+        width: 100%;
+         
+      } 
+      .hero-heading{
+          
+          font-size: 40px;
+          margin-left: 25%;
+          margin-top: 25%;
+      }
+      .hero-role{
+          right: 150px;
+          top: 197px; 
+          margin-top: 40px;
+       
+       }
+       .hero-resume{
+        right: 95px;
+        top: 196px;
+       }
+       #about{
+  
+        width: 100%;
+       background-color: rgb(220,226,248);
+        margin: auto;
+        margin-top: 200px;
+        padding: 30px 0px 20px 20px;
+    }
+    .about-me{
+        
+        font-size: 2rem;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        
+    
+    }
+    .box1{
+        
+        gap: 30px;
+       
+    }
+    .bio>h2{
+        text-align:justify;
+        width: 90%;
+        margin: auto;
+        font-size: 20px;
+        
+    }
+    .heading{
+        background-image: linear-gradient(to right,white,rgb(220,226,248));  
+        font-size: 20px;
+        margin: 0 0 0px 30px;
+        
+       
+    }
+    .timeline{
+        display: block;
+        width: 90%;
+        margin: 100px 0 0 0;
+    }
+    
+    .card{
+        width: 90%;
+        margin: 30px 0;
+    }
+   #card1{
+    margin-top: -100px;
+   }
+  /* project */
+  #project>div:first-child>h2 {
+    
+    font-size: 50px;
+    
+}
+.project1{
+    
+    display: grid;
+    grid-template-columns: 100%;
+    padding-bottom: 30px;
+    
+}
+.project1>img{
+    border-radius: 20px 20px 0 0;
+}
+/* Skills */
+#skills{
+    
+    width: 100%;
+    margin-top: 400px;
+    padding: 70px 0px;
+    
+    border: 2px solid red;
+
+}
+#tech-skills>div{
+    
+    padding: 10px 0px 0 0;
+    background-color: white;
+    
+}
+#tech-skills>div>p{
+    
+    font-size: 16px;
+}
+#contact{
+    width: 100%;
+    
+    background-color: rgb(245,245,245);
+    display: grid;
+    grid-template-columns: 100%;
+}
+.email-form>form{
+   
+    max-width: 100%;
+    
+    }
+    .email-form>form button{
+        border: none;
+        width: 30%;
+    }
 }
 
 
