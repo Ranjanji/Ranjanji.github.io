@@ -383,11 +383,13 @@ p{
     position: relative;
     animation-name: example;
     animation-duration: 3s;
+    
 }
 @keyframes example {
     from {transform: translate(0px, -40px);}
     to {transform: translate(0px, 0px);}
   }
+  
   
 .project1>img{
     width: 100%;
