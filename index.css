@@ -381,11 +381,11 @@ p{
     border-radius: 20px;
     transition: all 2s ease;
     position: relative;
-    animation-name: example;
+    animation-name: project_div;
     animation-duration: 3s;
     
 }
-@keyframes example {
+@keyframes project_div {
     from {transform: translate(0px, -40px);}
     to {transform: translate(0px, 0px);}
   }
@@ -718,6 +718,10 @@ border-radius: 10px;
     border: 2px solid red;
 
 }
+#tech-skills{
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(5,1fr);
+}
 #tech-skills>div{
     
     padding: 10px 0px 0 0;
@@ -726,7 +730,7 @@ border-radius: 10px;
 }
 #tech-skills>div>p{
     
-    font-size: 16px;
+    font-size: 20px;
 }
 #contact{
     width: 100%;
@@ -839,10 +843,17 @@ border-radius: 10px;
     display: grid;
     grid-template-columns: 100%;
     padding-bottom: 30px;
+    background-color: rgb(220,226,248);
+    
     
 }
 .project1>img{
     border-radius: 20px 20px 0 0;
+}
+.project1>div{
+    color: black;
+    padding: 20px 0px 20px 50px;
+   
 }
 /* Skills */
 #skills{
@@ -854,15 +865,19 @@ border-radius: 10px;
     
 
 }
+#tech-skills{
+    grid-template-columns: repeat(1,80%);
+    grid-template-rows: repeat(5,1fr);
+}
 #tech-skills>div{
     
     padding: 10px 0px 0 0;
     background-color: white;
-    
+    margin: auto;
 }
 #tech-skills>div>p{
     
-    font-size: 16px;
+    font-size: 24px;
 }
 #contact{
     width: 100%;
