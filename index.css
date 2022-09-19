@@ -628,6 +628,9 @@ border-radius: 10px;
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .home-section:before{
       width: 100%; 
+      background-image: url("tech-planet.jpg");
+      opacity: 0.8;
+  
     } 
     .hero-heading{
         
@@ -639,15 +642,37 @@ border-radius: 10px;
         right: 150px;
         top: 197px; 
         margin-top: 40px;
+        color: white;
      
      }
+     .hero-resume{
+        top: 216px;
+     }
+     #hero-color{
+        
+        animation: effect 2s linear infinite;
+        font-weight: bolder;
+        position: relative;
+        transition: all 0.8s ease-in-out;
+        
+        
+     }
+     @keyframes effect {
+        0% {
+            top: -30px;
+        }
+    
+        100% {
+           top: 0px;
+        }
+    }
      #about{
   
         width: 100%;
        background-color: rgb(220,226,248);
         margin: auto;
         margin-top: 200px;
-        padding: 30px 0px 20px 20px;
+        padding: 70px 0px 20px 20px;
     }
     .about-me{
         
@@ -751,6 +776,9 @@ border-radius: 10px;
     display: grid;
     grid-template-columns: 100%;
 }
+.myDetails{
+    padding-top: 70px;
+}
 .email-form>form{
    
     max-width: 100%;
@@ -775,7 +803,8 @@ border-radius: 10px;
     }
     .home-section:before{
         width: 100%;
-         
+        background-image: url("tech-planet.jpg");
+        opacity: 0.8;
       } 
       .hero-heading{
           
@@ -787,6 +816,9 @@ border-radius: 10px;
           right: 150px;
           top: 197px; 
           margin-top: 40px;
+          font-size: 16px;
+          color: white;
+          
        
        }
        .hero-resume{
@@ -799,7 +831,7 @@ border-radius: 10px;
        background-color: rgb(220,226,248);
         margin: auto;
         margin-top: 200px;
-        padding: 30px 0px 20px 20px;
+        padding:70px 0px 20px 20px;
     }
     .about-me{
         
@@ -894,23 +926,26 @@ border-radius: 10px;
 }
 
 .calendar{  
-    transform:scaleY(1.6); 
+     
     
 }
 
 #tech-skills+h1{
-    margin-top: 30px;
-    margin-bottom: 80px;
+    
+    
 }
 
 
 
 #contact{
     width: 100%;
-    
+   
     background-color: rgb(245,245,245);
     display: grid;
     grid-template-columns: 100%;
+}
+.myDetails{
+     padding-top: 70px;
 }
 .email-form>form{
    
