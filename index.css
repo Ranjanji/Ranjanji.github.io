@@ -160,12 +160,12 @@ body{
 
 }
 .box1>img{
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: block;
     border-radius: 50%;
     /* border: 5px solid rgb(222,222,205); */
-   
+   margin-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
@@ -183,6 +183,8 @@ padding: 5px 10px;
 .bio>h2{
     text-align:justify;
     width: 100%;
+    margin-top: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     
 }
 
@@ -490,6 +492,24 @@ p{
     margin: 5px;
     font-size: 20px;
 }
+
+.soft{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    
+    justify-content: center;
+}
+.soft>div{
+    border: 1px solid rgb(164, 153, 153);
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
 .calendar{
     margin-top: 30px;
     width: 95%;
@@ -695,6 +715,7 @@ border-radius: 10px;
         width: 90%;
         margin: auto;
         font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
         
     }
     .heading{
@@ -762,12 +783,19 @@ border-radius: 10px;
     
 }
 
-#tech-skills+h1{
-    margin-top: 30px;
-    margin-bottom: 80px;
+.soft>div{
+    
+    margin-top: 0px;
+    margin-bottom: 70px;
 }
-
-
+#stat{
+    
+    margin-bottom: 80px;
+    color: #01fe87;
+    position: relative;
+    z-index: 10;
+    bottom: 50px;
+}
 
 #contact{
     width: 100%;
@@ -854,7 +882,7 @@ border-radius: 10px;
         width: 90%;
         margin: auto;
         font-size: 20px;
-        
+        font-family: 'Courier New', Courier, monospace;
     }
     .heading{
         background-image: linear-gradient(to right,white,rgb(220,226,248));  
