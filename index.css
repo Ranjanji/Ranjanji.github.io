@@ -516,7 +516,17 @@ p{
     background-color: #565252;
     
 }
-
+.git-stat{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,48%);
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.git-stat>img{
+    width: 100%;
+}
 
 
 #contact{
@@ -782,11 +792,22 @@ border-radius: 10px;
     transform:scaleY(1.6); 
     
 }
-
-.soft>div{
+.soft{
+    width: 95%;
     
+}
+.soft>div{
+    font-size: 14px;
     margin-top: 0px;
     margin-bottom: 70px;
+}
+.git-stat{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 90px;
+    gap: 20px;
 }
 #stat{
     
@@ -952,18 +973,19 @@ border-radius: 10px;
     
     font-size: 24px;
 }
-
-.calendar{  
-     
-    
+.soft>div{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 70px;
 }
-
-#tech-skills+h1{
-    
-    
+.git-stat{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 50px;
+    gap: 20px;
 }
-
-
 
 #contact{
     width: 100%;
