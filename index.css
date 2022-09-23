@@ -18,7 +18,7 @@ body{
     background-color: darkcyan;
     padding: 20px;
     position: sticky;
-    z-index: 10;
+    z-index: 100;
     top: 0px;
 }
 #navbar>a{
@@ -41,9 +41,9 @@ body{
   left: 0;
   top: 0;
   width: 100%;
-  height: 550px;
-  opacity: 0.6;
-  background-image: url("1853427.jpg");
+  height: 600px;
+  opacity: 0.8;
+  background-image: url("tech-planet.jpg");
   
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -64,6 +64,7 @@ body{
    position: relative;
    right: 150px;
    top: 197px; 
+   color: white;
 }
 .hero-resume{
    position: relative;
@@ -184,7 +185,11 @@ padding: 5px 10px;
     text-align:justify;
     width: 100%;
     margin-top: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: Satisfy;
+    font-size: 24px;
+    font-family: Lobster;
+    font-weight: normal;
+    
     
 }
 
@@ -315,9 +320,109 @@ p{
 
 
 
+    .boxy{
+      position: relative;
+        display: block;
+      width: 100%;
+      height: 300px;
+      margin: 0 auto 2em;
+      padding: 0;
+      background-size: cover;
+      border-radius: 10px;
+      
+      overflow:hidden;
+      transition:all .4s ease;
+    }
+    
+    .overlay_1{
+       width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      z-index:10;
+    }
+    .overlay_1:after {
+      content: '';
+      width: 200%;
+      border-radius: 10px;
+      height: 100%;
+      background-color: #202020;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      z-index: -10;
+      left: 0;
+      transition: all .3s ease;
+    }
+    .overlay-text {
+        position: relative;
+        top:-200px;
+        margin-bottom:1em;
+        margin-top:2em;
+      font-family: "Montserrat";
+        font-size: 2.25em;
+        font-weight: 200;
+        color:white;
+        text-align: center;
+        letter-spacing:5px;
+        transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
+      }
+    .overlay-link{
+      position: relative;
+      display: block;
+      width: 50%;
+      top: 220px;
+      padding: 10px;
+      margin: 0 auto;
+      font-family: "Montserrat";
+      color: white;
+      letter-spacing: 3px;
+      text-decoration: none;
+      text-align: center;
+      border: 2px solid white;
+      border-radius: 3px;
+      font-size: 1.25em;
+      transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+    }
+    .overlay-link:hover{
+      background-color: white;
+          color:#202020;
+      text-decoration: none;
+    }
+    
+    
+    .boxy:hover .overlay-text {
+      top: 0;
+    }
+    .boxy:hover .overlay-link{
+      top: 0;
+    }
+    .boxy:hover .overlay_1:after {
+      opacity: .75;
+    }
+    
+    
+    
+    .box_1{
+      background-image: url("https://park.shifting-gears.com/wp-content/uploads/2014/11/zoomcars-gurgaon-1280x720.jpg");
+    }
+    
+    .box_2{
+       background-image: url('https://i1.lmsin.net/website_images/bh/static-pages/en/tour/max/desktop/max-smartsearch-tour-desktop-en.jpg');
+    }
+    
+
+
+
+
+
+
+
+
+
 
 #project{
-    height: 800px;
+    height: 900px;
    
     margin: auto;
     
@@ -370,17 +475,15 @@ p{
 .project1{
     
     display: grid;
-    grid-template-columns: repeat(2,45%);
+    grid-template-columns: repeat(2,47%);
     justify-content: center;
-    gap: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    
-    background-color: rgb(86,82,82);
+    gap: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    background-color: white;
     width: 80%;
     margin: auto;
     margin-top: 60px;
-    
-    border-radius: 20px;
+    padding: 20px 0px;
     transition: all 2s ease;
     position: relative;
     animation-name: project_div;
@@ -391,18 +494,29 @@ p{
     from {transform: translate(0px, -40px);}
     to {transform: translate(0px, 0px);}
   }
+  .project1>div:nth-child(2){
+    color: black;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(220,226,248);
+    border-radius: 20px 20px 20px 20px;
+    margin: 2px 0px;
+    cursor: default;
+   
+}
   
-  
-.project1>img{
+.project1>div:first-child{
     width: 100%;
     height: 240px;
     margin: auto;
+    border-radius: 20px 20px 20px 20px;
 }
-.project1>div{
-    color: #ffffff;
-    padding: 20px 0px 20px 50px;
-   
+.project1>div:first-child>img{
+    width: 100%;
+    height: 240px;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
 }
+
 .projectLink{
     display: flex;
     gap: 20px;
@@ -482,6 +596,27 @@ p{
     box-shadow: rgba(240, 240, 250, 0.25) 0px 30px 60px -12px inset, rgba(237, 228, 228, 0.3) 0px 18px 36px -18px inset;
     border-radius: 10px;
 }
+#tech-skills>div:hover{
+       animation: effect 1s linear;
+        position: relative;
+        transition: all 1s ease-in-out;
+        cursor:cell;
+}
+@keyframes effect {
+    20%,50%,80%,to{
+        top: 0;
+    }
+    
+    40%{
+        top: -30px;
+    }
+    70%{
+        top: -15px;
+    }
+    90%{
+        top: -4px;
+    }
+}
 #tech-skills>div>img{
    width: 80%;
    display: block;
@@ -510,9 +645,20 @@ p{
     margin-top: 30px;
     margin-bottom: 50px;
 }
+#my-stats{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+}
+#stat{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    margin-top: 20px;
+}
 .calendar{
     margin-top: 30px;
-    width: 95%;
+    width: 100%;
     background-color: #565252;
     
 }
@@ -680,20 +826,26 @@ border-radius: 10px;
      }
      #hero-color{
         
-        animation: effect 2s linear infinite;
+        animation: effect 2.5s linear infinite;
         font-weight: bolder;
         position: relative;
-        transition: all 0.8s ease-in-out;
+        transition: all 0.5s ease-in-out;
         
         
      }
      @keyframes effect {
-        0% {
+        20%,50%,80%,to{
+            top: 0;
+        }
+        
+        40%{
             top: -30px;
         }
-    
-        100% {
-           top: 0px;
+        70%{
+            top: -15px;
+        }
+        90%{
+            top: -4px;
         }
     }
      #about{
@@ -701,7 +853,7 @@ border-radius: 10px;
         width: 100%;
        background-color: rgb(220,226,248);
         margin: auto;
-        margin-top: 200px;
+        margin-top: 220px;
         padding: 70px 0px 20px 20px;
     }
     .about-me{
@@ -750,6 +902,9 @@ border-radius: 10px;
    }
 
    /* project */
+   #project{
+    height:800px;
+   }
    #project>div:first-child>h2 {
     font-size: 50px; 
 }
@@ -757,12 +912,30 @@ border-radius: 10px;
     
     display: grid;
     grid-template-columns: 100%;
-    padding-bottom: 30px;
-    
+    align-items:baseline;
+    gap: 10px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 0;
     
 }
-.project1>img{
+.project1>div:first-child{
     border-radius: 20px 20px 0 0;
+}
+.project1>div:nth-child(2){
+    border-radius: 0 0 20px 20px ;
+}
+.project1>div:first-child>img{
+    border-radius: 20px 20px 0 0;
+}
+.overlay-text{
+   
+    margin-top:2em;
+    
+}
+.overlay-link{
+
+font-size: 1em;
+
 }
 /* Skills */
 #skills{
@@ -788,8 +961,30 @@ border-radius: 10px;
     
     font-size: 20px;
 }
+#my-stats{
+    width: 95%;
+    margin: auto;
+    padding: 50px 0px;
+    
+}
+#stat{
+  
+    margin-bottom: 70px;
+    font-size: 40px;
+    margin-top: 20px;
+}
 .calendar{  
     transform:scaleY(1.6); 
+    
+}
+.git-stat{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-top: 90px;
+    gap: 20px;
     
 }
 .soft{
@@ -801,22 +996,8 @@ border-radius: 10px;
     margin-top: 0px;
     margin-bottom: 70px;
 }
-.git-stat{
-    width: 95%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 100%;
-    margin-top: 90px;
-    gap: 20px;
-}
-#stat{
-    
-    margin-bottom: 80px;
-    color: #01fe87;
-    position: relative;
-    z-index: 10;
-    bottom: 50px;
-}
+
+
 
 #contact{
     width: 100%;
@@ -926,6 +1107,9 @@ border-radius: 10px;
     margin-top: -100px;
    }
   /* project */
+  #project{
+    height:800px
+  }
   #project>div:first-child>h2 {
     
     font-size: 50px;
@@ -935,18 +1119,30 @@ border-radius: 10px;
     
     display: grid;
     grid-template-columns: 100%;
-    padding-bottom: 30px;
-    background-color: rgb(220,226,248);
-    
+    align-items:baseline;
+    gap: 10px;
+    border-radius: 20px 20px 5px 5px;
+    padding: 0;
     
 }
-.project1>img{
+.project1>div:first-child{
     border-radius: 20px 20px 0 0;
 }
-.project1>div{
-    color: black;
-    padding: 20px 0px 20px 50px;
+.project1>div:nth-child(2){
+    border-radius: 0 0 5px 5px ;
+}
+.project1>div:first-child>img{
+    border-radius: 20px 20px 5px 5px;
+}
+.overlay-text{
    
+        margin-top:2em;
+        font-size: 2em;
+}
+.overlay-link{
+    width: 60%; 
+    font-size: 1em;
+    
 }
 /* Skills */
 #skills{
