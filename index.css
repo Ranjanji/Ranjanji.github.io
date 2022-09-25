@@ -413,13 +413,7 @@ p{
     
 
 
-
-
-
-
-
-
-
+/* ========================projects section=========== */
 
 #project{
     height: 900px;
@@ -558,10 +552,7 @@ p{
     
 }
 
-
-
-
-
+/* ======================skills================== */
 #skills{
     
     width: 80%;
@@ -998,7 +989,7 @@ font-size: 1em;
 }
 
 
-
+/* Contacts */
 #contact{
     width: 100%;
     
@@ -1019,7 +1010,6 @@ font-size: 1em;
         width: 30%;
     }
 }
-
 
 
 
@@ -1106,6 +1096,8 @@ font-size: 1em;
    #card1{
     margin-top: -100px;
    }
+
+
   /* project */
   #project{
     height:800px
@@ -1144,6 +1136,8 @@ font-size: 1em;
     font-size: 1em;
     
 }
+
+
 /* Skills */
 #skills{
     
@@ -1183,6 +1177,8 @@ font-size: 1em;
     gap: 20px;
 }
 
+
+/* contacts */
 #contact{
     width: 100%;
    
@@ -1204,7 +1200,6 @@ font-size: 1em;
     }
 
 }
-
 
 
 ::-webkit-scrollbar {
