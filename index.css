@@ -1179,7 +1179,14 @@ font-size: 1em;
     margin-top: 0px;
     margin-bottom: 70px;
 }
-
+.git-stat{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 50px;
+    gap: 20px;
+}
 
 
 /* contacts */
