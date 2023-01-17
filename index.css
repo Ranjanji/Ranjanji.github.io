@@ -409,19 +409,23 @@ p{
     
     
     
-    .box_1{
+    .box_5{
       background-image: url("");
     }
     
-    .box_2{
-       background-image: url('https://images.projectsgeek.com/2016/01/Crime-Investigation-Management-System.jpg');
+    .box_4{
+        background-image: url("covidProof.png");
+          
     }
-    
+
     .box_3{
+       background-image: url('crime-management-console.jpeg');
+    }    
+    .box_2{
         background-image: url('https://park.shifting-gears.com/wp-content/uploads/2014/11/zoomcars-gurgaon-1280x720.jpg');
      }
 
-     .box_4{
+    .box_1{
         background-image: url('https://i1.lmsin.net/website_images/bh/static-pages/en/tour/max/desktop/max-smartsearch-tour-desktop-en.jpg');
      }
 
