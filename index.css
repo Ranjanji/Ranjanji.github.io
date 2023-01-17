@@ -359,13 +359,19 @@ p{
         top:-200px;
         margin-bottom:1em;
         margin-top:2em;
-      font-family: "Montserrat";
+        font-family: "Montserrat";
         font-size: 2.25em;
         font-weight: 200;
         color:white;
         text-align: center;
         letter-spacing:5px;
         transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
+      }
+      .text-fit{
+        font-size: 2.25em;
+        margin-bottom:0.8em;
+        margin-top:1.2em;
+       
       }
     .overlay-link{
       position: relative;
@@ -404,19 +410,25 @@ p{
     
     
     .box_1{
-      background-image: url("https://park.shifting-gears.com/wp-content/uploads/2014/11/zoomcars-gurgaon-1280x720.jpg");
+      background-image: url("");
     }
     
     .box_2{
-       background-image: url('https://i1.lmsin.net/website_images/bh/static-pages/en/tour/max/desktop/max-smartsearch-tour-desktop-en.jpg');
+       background-image: url('https://images.projectsgeek.com/2016/01/Crime-Investigation-Management-System.jpg');
     }
     
+    .box_3{
+        background-image: url('https://park.shifting-gears.com/wp-content/uploads/2014/11/zoomcars-gurgaon-1280x720.jpg');
+     }
 
+     .box_4{
+        background-image: url('https://i1.lmsin.net/website_images/bh/static-pages/en/tour/max/desktop/max-smartsearch-tour-desktop-en.jpg');
+     }
 
 /* ========================projects section=========== */
 
 #project{
-    height: 900px;
+    height: 1600px;
    
     margin: auto;
     
@@ -1156,8 +1168,6 @@ font-size: 1em;
     margin-top: 600px;
     padding: 70px 0px;
     
-    
-
 }
 
 #tech-skills{
@@ -1188,7 +1198,6 @@ font-size: 1em;
     gap: 20px;
 }
 
-
 /* contacts */
 #contact{
     width: 100%;
@@ -1203,7 +1212,7 @@ font-size: 1em;
 .email-form>form{
    
     max-width: 100%;
-    
+
     }
     .email-form>form button{
         border: none;
@@ -1213,9 +1222,7 @@ font-size: 1em;
 }
 @media only screen and (min-width: 320px) and (max-width: 385px){
     #navbar{
-        gap: 8px;
-       
-        
+        gap: 8px;   
     }
     #navbar>a{
         font-size: 12px;
