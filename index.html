@@ -31,7 +31,8 @@
         <div class="home-section active">
             <h1 class="hero-heading"><span id="hero-color">hello</span> , i am <br> Subham <br>Ranjan</h1>
             <h3 class="hero-role">And I'm a Full Stack Web Developer</h3>
-            <a class="hero-resume active" href="https://github.com/Ranjanji/RESUME/raw/main/Subham_Ranjan_Resume.pdf" download>Resume</a>
+            <a class="hero-resume active" id="downloadCV"
+             href="https://github.com/Ranjanji/RESUME/raw/main/Subham_Ranjan_Resume.pdf" download="Subham_Ranjan_Resume">Resume</a>
            
         </div>
     </div>
@@ -46,7 +47,7 @@
             <a href="https://github.com/Ranjanji" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" alt="logo-github"></a>
             <a href="https://linkedin.com/in/Subham-Ranjan" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="logo-linkdin"></a>
             <a href="#contact" class="box-sub">Contact Me</a>
-            <a class="box-sub" href="https://github.com/Ranjanji/RESUME/raw/main/Subham_Ranjan_Resume.pdf" download>Resume</a>
+            <a class="box-sub" id="downloadCV1" href="https://github.com/Ranjanji/RESUME/raw/main/Subham_Ranjan_Resume.pdf" download="Subham_Ranjan_Resume">Resume</a>
         </div>
         
         </div>
@@ -137,7 +138,7 @@
                 HTML | CSS | Javascript </p>
                 <div class="projectLink">
                     <a href="https://github.com/Ranjanji/doted-branch-8352" class="btn" target="_blank">Code</a>
-                    <a href="https://drive.google.com/drive/folders/1ePwnb_U4BDKqoLKsC_Rm9nDh6VLIwmMh?usp=sharing"  class="btn" target="_blank">Demo Video</a>
+                    <a href="https://drive.google.com/drive/folders/1ePwnb_U4BDKqoLKsC_Rm9nDh6VLIwmMh?usp=sharing"  class="btn" >Demo Video</a>
                 </div>
             </div>
         </div>
@@ -330,6 +331,14 @@
 </script>
 
    <script >
+    let button = document.getElementById("downloadCV");
+button.addEventListener("click", () => {
+  window.open("https://drive.google.com/file/d/1hu7CHQUusZY18gblYSPWr84Td2xF_ucO/view?usp=share_link");
+});
+let button1 = document.getElementById("downloadCV1");
+button1.addEventListener("click", () => {
+  window.open("https://drive.google.com/file/d/1hu7CHQUusZY18gblYSPWr84Td2xF_ucO/view?usp=share_link");
+});
 GitHubCalendar(".calendar", "Ranjanji", { responsive: true,global_stats:false,tooltips: true});
 </script>
     
